@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prajm</title>
+</head>
+<body>
+<p id="pp"></p>
+
+<script>
+    debugger;
+    let a;
+    let b;
+    let don;
+    let aut = "";
+
+    for (a=2; a<100; a++) {
+        don = 0;
+        for (b=2; b + 1 < a && don === 0; b++){
+            if(a % b === 0){
+                don = 1;
+            }
+        }
+        if (don !== 1) {
+            aut += a + " ";
+        }
+    }
+    document.getElementById("pp").innerText = aut;
+</script>
+</body>
+</html>
